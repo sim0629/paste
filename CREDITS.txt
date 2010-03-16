@@ -1,4 +1,4 @@
-$ID CREDITS, v1, EcKstasy - 15/03/2010/23:31 GMT+1 (dd/mm/yy/time) 
+$ID CREDITS.txt, v1, EcKstasy - 16/03/2010/00:18 GMT+1 (dd/mm/yy/time) 
 
 - DESCRIPTION OF PROJECT:
 PASTE is modified from the original pastebin.com source with some changes also made by Jorge Peña (http://www.blaenkdenum.com)

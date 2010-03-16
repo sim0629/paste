@@ -1,6 +1,6 @@
 <?php
 /*
-* $ID config.php, v2 EcKstasy - 15/03/2010/00:00 GMT+1 (dd/mm/yy/time) 
+* $ID config.php, v2 EcKstasy - 16/03/2010/00:00 GMT+1 (dd/mm/yy/time) 
 * 
 * Configuration file for PASTE
 *
