@@ -1,0 +1,12 @@
+# PROJECT: PASTE
+# If you're using %s instead of %d, replace ^([0-9]+)$ with ^([A-Z,a-z,0-9]+)$
+# If your pastebin is in a subdirectory or if the script is different from index.php-
+# change index.php to /directory/index.php (Of coarse, replace index.php to the name of the script)
+
+RewriteEngine on
+RewriteRule ^([0-9]+)$ index.php?show=$1
+RewriteRule ^archive$ index.php?archive=1
+RewriteRule ^diff/([0-9]+)$ index.php?diff=$1
+RewriteRule ^download/([0-9]+)$ index.php?dl=$1
+RewriteRule ^download/([0-9]+)/pass/([a-zA-Z0-9]+)$ index.php?dl=$1&pass=$2
+Options -Indexes
