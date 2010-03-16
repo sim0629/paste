@@ -6,7 +6,7 @@ Syntax:
  [!] Undecided.
  [X] Scrapped.
  
- 1. [=] - Create customizable templates system.
+ 1. [=] - Create customizable template system.
  2. [+] - Rework on the differences feature.
  3. [+] - Add search feature.
  4. [+] - Add administration panel.
