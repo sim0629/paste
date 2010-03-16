@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `paste` (
   `codefmt` mediumtext,
   `codecss` text,
   `expires` datetime default NULL,
-  `expiry_flag` enum('d','m','f') NOT NULL default 'm',
+  `expiry_flag` enum('d','m','f') NOT NULL default 'f',
   `password` varchar(250) default NULL,
   PRIMARY KEY  (`pid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
