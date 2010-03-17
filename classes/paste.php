@@ -298,9 +298,9 @@ class Pastebin
 			}
 			
          if ($post['password'] != 'EMPTY')
-            $post['downloadurl']="/download/$pid/pass/" . $post['password'];
+            $post['downloadurl']=$this->conf['url']."?dl=$pid&pass=". $post['password'];
          else
-            $post['downloadurl']="/download/$pid";
+            $post['downloadurl']=$this->conf['url']."?dl=$pid";
 			
 			// Store the code for later editing
 			$post['editcode']=$post['code'];

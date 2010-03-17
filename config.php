@@ -45,9 +45,6 @@ $CONF['url_format']='%d';
 // Default expiry time - d (day), m (month), and f (forever).
 $CONF['default_expiry']='f';
 
-// Where is the script located? If it's in the root of your site keep it as-is.
-$CONF['this_script']='index.php';
-
 // The maximum number of posts you want to keep. Keep this as-is if you want no limits.
 $CONF['max_posts']=0;
 
@@ -204,5 +201,4 @@ $CONF['popular_syntax']=array(
 	'perl','python','sql','ruby', 'rails', 'tcl', 'xml',
 	'whois','xorg_conf','java','apt_sources','mirc','c','cpp',
 );
-define('INSTALLED', true);
 ?>

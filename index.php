@@ -13,11 +13,6 @@
 * GNU General Public License for more details.
 */
 
-if (!defined('INSTALLED')) {
-    header("Location: ./install/");
-    exit;
-}
-
 // Includes
 require_once('classes/config.inc.php');
 require_once('classes/geshi/geshi.php');
@@ -71,7 +66,7 @@ if (isset($_GET['dl']))
    mysql_connect($CONF['dbhost'], $CONF['dbuser'], $CONF['dbpass']) or die(mysql_error());
 	$newPID = mysql_real_escape_string($pid);
 	mysql_select_db($CONF['dbname']) or die(mysql_error());
-	$result = mysql_query("SELECT * from pastebin where pid = " . $newPID);
+	$result = mysql_query("SELECT * from paste where pid = " . $newPID);
    
    if ($result == FALSE) {
       echo "Pastebin entry $pid is not available";
