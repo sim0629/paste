@@ -122,7 +122,7 @@ class Pastebin
 		{
 			$value=$post["poster"].'#'.$post["format"].'#'.$post['expiry'];
 			
-			//set cookie if not set
+			// Set cookie if not set.
 			if (!isset($_COOKIE["persistName"]) || 
 				($value!=$_COOKIE["persistName"]))
 				setcookie ("persistName", $value, time()+3600*24*365);  
@@ -153,7 +153,7 @@ class Pastebin
             	$password=$post["password"];
             }
 			
-			//now insert..
+			// Now insert..
 			$parent_pid=0;
 			if (isset($post["parent_pid"]))
 				$parent_pid=intval($post["parent_pid"]);
