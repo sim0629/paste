@@ -39,7 +39,7 @@ $CONF['privkey']='yourprivatekey'; //
 $CONF['pubkey']='yourpublickey';
 
 /* 
-* Format of the URLs to the pastebin entries. %d = Entry ID / %s = Randomly generated string.
+* Format of the URLs to the pastebin entries. %d = Entry ID.
 * If you're using Apache's mod_rewrite you'd use something like this: $CONF['url_format']="%d";
 * If you're not using mod_rewrite, you'll need to use something like:
 * $CONF['url_format']="/index.php?show=%d";
