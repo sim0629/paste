@@ -1,4 +1,4 @@
-$ID TODO.txt, v1, EcKstasy - 16/03/2010/01:17 GMT+1 (dd/mm/yy/time)
+$ID PROJECT: Paste - TODO.txt, v1, EcKstasy - 16/03/2010/01:17 GMT+1 (dd/mm/yy/time)
 
 Syntax:
  [=] Done.
@@ -6,10 +6,9 @@ Syntax:
  [!] Undecided.
  [X] Scrapped.
  
- 1. [=] - Create customizable template system.
+ 1. [=] - Customizable templates.
  2. [+] - Rework on the differences feature.
  3. [+] - Add search feature.
  4. [+] - Add administration panel.
- 5. [!] - Create an installer.
+ 5. [+] - Create an installer.
 EOF
- 
