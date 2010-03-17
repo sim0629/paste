@@ -1,10 +1,10 @@
 $ID PROJECT: Paste - CREDITS.txt, v1, EcKstasy - 16/03/2010/00:18 GMT+1 (dd/mm/yy/time) 
 
 - DESCRIPTION OF PROJECT:
-PASTE is modified from the original pastebin.com source with some changes also made by Jorge Peña (http://www.blaenkdenum.com)
+PASTE is an open source pastebin forked from the original pastebin.com script
+Some changes were also made by Jorge Peña (http://www.blaenkdenum.com)
 
 - CREDITS:
 Paul Dixon (blog.dixo.net) for creating the original pastebin.com source.
 
-Jorge Peña (http://www.blaenkdenum.com) for making numerous changes to the source,
-(archives, password protection [...])
+Jorge Peña (http://www.blaenkdenum.com) for making numerous changes to the source, (archives and password protection)

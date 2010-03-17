@@ -14,12 +14,15 @@ eg: http://mysite.com/ or http://mysite.com/paste/
 Simply enter all the required fields and click "Install".
 this will create the mysql table and generate a configuration file
 for your settings.
+4> Edit htaccess.txt to suit your needs and rename it to .htaccess
+  (Please read the comments in htaccess.txt carefully)
 
 Manual installation:
 1.1> Create a database for the pastebin.
-1.2> Add the tables to the database (paste.sql)
+1.2> Add the tables to the database (/manual/paste.sql)
 
-2> Edit the configuration file to suit your needs (config.php)
+2> Edit the configuration file to suit your needs (/manual/config.php)
+and move it to the main directory
 3> Upload all of the files to the webserver.
 4> Edit htaccess.txt to suit your needs and rename it to .htaccess
   (Please read the comments in htaccess.txt carefully)

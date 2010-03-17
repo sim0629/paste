@@ -208,4 +208,5 @@ $CONF['popular_syntax']=array(
 	'perl','python','sql','ruby', 'rails', 'tcl', 'xml',
 	'whois','xorg_conf','java','apt_sources','mirc','c','cpp',
 );
+define('INSTALLED', true);
 ?>
