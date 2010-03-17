@@ -2,11 +2,9 @@
 /*
 * $ID config.php, v1 EcKstasy - 16/03/2010/00:00 GMT+1 (dd/mm/yy/time) 
 * 
-* Configuration file for PASTE
-*
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public License
-* as published by the Free Software Foundation; either version 2
+* as published by the Free Software Foundation; either version 3
 * of the License, or (at your option) any later version.
 * 
 * This program is distributed in the hope that it will be useful,
@@ -25,23 +23,28 @@ $CONF['dbname']='mysqldatabase';
 $CONF['dbuser']='mysqluser';
 $CONF['dbpass']='databasepassword';
 
+// This should be the URL to your pastebin. eg: http://paste.info.tm/ or http://paste.info.tm/subdir/
+$CONF['url']='http://paste.info.tm/';// Make sure you end it with a forward slash! (/)
+
+// What is the name of the template you want to use (the folder as displayed in /templates/)
+$CONF['template']='default';
+
 // Site title (Appears in the <title></title> tags)
 $CONF['title']='PASTE - The name says it all.';
 
-// This is for the logo at the top of the pastebin.
-$CONF['pastebin']='http://paste.info.tm/';
-
-// The path to the directory where the pastebin is located. (/ = root dir of the site)
-$CONF['path']='/';
+// Do you want to enable reCAPTCHA support on your pastebin? false = no, true = yes
+$CONF['useRecaptcha'] = false;
+// Get your keys at http://recaptcha.net/
+$CONF['privkey']='yourprivatekey'; // 
+$CONF['pubkey']='yourpublickey';
 
 /* 
 * Format of the URLs to the pastebin entries. %d = Entry ID / %s = Randomly generated string.
-* If you're using Apache2's mod_rewrite you'd use something like this:
-* $CONF['url_format']="/mysubdir/%d"; - If the script isn't in a subdirectory, use: "/%d" instead.
+* If you're using Apache's mod_rewrite you'd use something like this: $CONF['url_format']="%d";
 * If you're not using mod_rewrite, you'll need to use something like:
 * $CONF['url_format']="/index.php?show=%d";
 */
-$CONF['url_format']='/%d';
+$CONF['url_format']='%d';
 
 // Default expiry time - d (day), m (month), and f (forever).
 $CONF['default_expiry']='f';
@@ -59,7 +62,7 @@ $CONF['highlight_prefix']='@@';
 $CONF['default_highlighter']='text';
 
 // Available formats (All GeSHi formats are here)
-$CONF['all_syntax']=array(
+$CONF['geshiformats']=array(
 	'abap'=>'ABAP',
 	'actionscript'=>'ActionScript',
 	'actionscript3'=>'ActionScript 3',
