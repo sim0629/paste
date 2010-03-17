@@ -1,4 +1,4 @@
-$ID PROJECT: Paste - README.txt, v1, EcKstasy - 16/03/2010/00:33 GMT+1 (dd/mm/yy/time)
+$ID PROJECT: Paste - README.txt, v1, EcKstasy - 17/03/2010/08:47 GMT+1 (dd/mm/yy/time)
 
 Requirements: PHP, MySQL
 
