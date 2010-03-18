@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=iso-8859-1" />
-<title><?php echo $CONF['title']?></title>
+<title><?php echo $page['title']?></title>
 <script type="text/javascript" src="<?php echo $CONF['url'] . 'templates/' . $CONF['template']?>/pastebin.js"></script>
 <link rel="shortcut icon" href="<?php echo $CONF['url'] . 'templates/' . $CONF['template']?>/images/favicon.ico" />
 <link rel="stylesheet" type="text/css" media="screen" href="<?php echo $CONF['url'] . 'templates/' . $CONF['template']?>/style.css" />

@@ -118,7 +118,11 @@ else
 if ($page['current_format']!='text')
 {
 	// Give the page a title which features the syntax used.
-	$page['title']=$CONF['geshiformats'][$page['current_format']] . " ".$page['title'];
+	$page['title']=$CONF['geshiformats'][$page['current_format']] . " - ".$CONF['title'];
+}
+else
+{
+	$page['title']=$CONF['title'];
 }
 
 // HTML page output.
