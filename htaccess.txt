@@ -1,6 +1,4 @@
 # PROJECT: PASTE
-
 RewriteEngine on
 RewriteRule ^([0-9]+)$ index.php?show=$1
-RewriteRule ^archive$ index.php?archive=1
 Options -Indexes

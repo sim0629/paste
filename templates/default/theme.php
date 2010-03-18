@@ -20,7 +20,7 @@
    <a href="<?php echo $CONF['url'] ?>"><img src="<?php echo $CONF['url'] . 'templates/' . $CONF['template']?>/images/logo.png" alt="<?php echo $CONF['title']?>" title="<?php echo $CONF['title'] ?>" class="logo" /></a>
 	<ul class="tabs">
 	 <li><a href="<?php echo $CONF['url']?>" title="Submit a new paste">Submit</a></li>
-     <li><a href="<?php echo $CONF['url']?>archive" title="List all public pastes">Archive</a></li>
+     <li><a href="<?php echo $CONF['url']?>?archive" title="List all public pastes">Archive</a></li>
 	</ul>
 </div>
 <div id="menu">
