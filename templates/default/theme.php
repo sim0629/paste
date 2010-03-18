@@ -9,9 +9,9 @@
 <link rel="stylesheet" type="text/css" media="screen" href="<?php echo $CONF['url'] . 'templates/' . $CONF['template']?>/style.css" />
 <?php if (isset($page['post']['codecss']))
 {
-	echo '<style type="text/css">';
-	echo $page['post']['codecss'];
-	echo '</style>';
+ echo '<style type="text/css">'."\n";
+ echo $page['post']['codecss'];
+ echo '</style>'."\n";
 }
 ?>
 </head>
@@ -161,7 +161,7 @@ if (isset($_GET['archive']))
 	
 	while ($row = mysql_fetch_array($pastes))
 	{
-      $pass = ($row['password'] == "EMPTY") ? "" : "<img src=\"templates/default/images/lock.png\" title=\"Password protected\">";
+      $pass = ($row['password'] == "EMPTY") ? "" : "<img src=\"templates/default/images/lock.png\" title=\"Password protected\" />";
 		echo "<tr>";
       echo "<td>" . $pass . "</td>";
 		echo "<td class=\"padright\"><a title=\"" . date("l F j, Y, g:i a", strtotime($row['posted'])) . "\" href=\"". $CONF['pastebin'] . "/" . $row['pid'] . "\">" . $row['poster'] . "</a></td>";
@@ -253,7 +253,7 @@ foreach ($CONF['geshiformats'] as $code=>$name)
 <div class="end"></div>
 <?php } ?>
  <br />
-  <h1>&copy; <?php echo date("Y"); ?> - Powered by <a href="https://sourceforge.net/projects/phpaste/">PASTE</a> 1.0</h1>
+  <h1>&copy; <?php echo date("Y"); ?> - Powered by <a href="http://sourceforge.net/projects/phpaste/">PASTE</a> 1.0</h1>
     </div>
    </form>
   </div>
