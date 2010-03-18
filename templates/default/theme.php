@@ -211,9 +211,7 @@ foreach ($CONF['geshiformats'] as $code=>$name)
 <div id="notes">To highlight particular lines, prefix each line with <?php echo $CONF['highlight_prefix'] ?></div>
 
 <!-- Code edit box -->
-<textarea id="code" class="codeedit" name="code2" cols="90" rows="20" onkeydown="return catchTab(this,event)">
-<?php echo htmlentities($page['post']['editcode']) ?>
-</textarea>
+ <textarea id="code" class="codeedit" name="code2" cols="90" rows="20" onkeydown="return catchTab(this,event)"><?php echo htmlentities($page['post']['editcode']) ?></textarea>
 </div>
 
 <div id="pasteInfo">
