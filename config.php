@@ -31,8 +31,8 @@ $CONF['title']='PASTE - The name says it all.';
 // Do you want to enable reCAPTCHA support on your pastebin? false = no, true = yes
 $CONF['useRecaptcha'] = false;
 // Get your keys at http://recaptcha.net/
-$CONF['privkey']='yourprivatekey'; // 
 $CONF['pubkey']='yourpublickey';
+$CONF['privkey']='yourprivatekey';
 
 /* 
 * Format of the URLs to the pastebin entries. %d = Entry ID.

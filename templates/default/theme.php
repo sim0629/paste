@@ -238,15 +238,21 @@ foreach ($CONF['geshiformats'] as $code=>$name)
  <input type="password" class="bringDown" size="21" value="<?php if (strcmp($page['post']['password'],'EMPTY') != 0) { echo $page['post']['password']; } else { echo ''; } ?>" name="password" />
 </div>
 
-<?php if ($CONF['useRecaptcha']) {
-   require_once('recaptchalib.php');
-}?>
-<?php if ($CONF['useRecaptcha']) { ?>
-<!-- reCAPTCHA -->
-  <div id="recaptcha">
-   <?php echo recaptcha_get_html($CONF['pubkey']); ?>
-  </div>
- <?php } ?>
+<?php
+if ($CONF['useRecaptcha']) {
+require_once('classes/recaptchalib.php');
+?>
+ <!-- reCAPTCHA -->
+ <script>
+var RecaptchaOptions = {
+   theme : 'clean'
+};
+</script>
+<div id="recaptcha">
+ <?php echo recaptcha_get_html($CONF['pubkey'])."\n"; ?>
+</div>
+<?php } ?>
+ 
 <?php } ?>
 <div class="end"></div>
 <?php } ?>
