@@ -206,6 +206,8 @@ class Pastebin
                break;
             case 'python':
                $ext='py';
+			case 'sql':
+			   $ext='sql';
                break;
 			   case 'php':
 			   case 'c':

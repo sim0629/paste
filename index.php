@@ -55,21 +55,21 @@ if (isset($_POST['paste']))
 	}
 }
 
-// Process downloads
+// Process downloads.
 if (isset($_GET['dl'])) 
 {
   global $errors;
    if (isset($_GET['pass']))
       $getPass = $_GET['pass'];
 	$pid=intval($_GET['dl']);
-   /* If password protected, don't allow to download */
+   // If password protected, don't allow to download it.
    mysql_connect($CONF['dbhost'], $CONF['dbuser'], $CONF['dbpass']) or die(mysql_error());
 	$newPID = mysql_real_escape_string($pid);
 	mysql_select_db($CONF['dbname']) or die(mysql_error());
 	$result = mysql_query("SELECT * from paste where pid = " . $newPID);
    
    if ($result == FALSE) {
-      echo "Pastebin entry $pid is not available";
+      echo "Paste $pid is not available.";
       exit;
    }
    
@@ -78,14 +78,14 @@ if (isset($_GET['dl']))
 
    if ($pass == 'EMPTY') {
       $pastebin->doDownload($pid);
+	  exit;
    }
    
-   else if ($pass != $getPass) {
-      echo "This paste is password protected";
-   }
+   else if ($pass != $getPass) {}
    
    else {
       $pastebin->doDownload($pid);
+	  exit;
    }
 }
 
