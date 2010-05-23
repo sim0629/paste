@@ -145,6 +145,7 @@ $CONF['geshiformats']=array(
 	'oracle11'=>'Oracle 11i',
 	'oracle8'=>'Oracle 8',
 	'pascal'=>'Pascal',
+	'pawn'=>'Pawn',
 	'per'=>'Per (forms)',
 	'perl'=>'Perl',
 	'php-brief'=>'PHP (Brief version)',
