@@ -1,7 +1,8 @@
 <?php
 /*
-* $ID PROJECT: Paste - paste.php, v1 EcKstasy - 17/03/2010/06:29 GMT+1 (dd/mm/yy/time) 
-* 
+* Copyright (C) 2010 EcKstasy <eckstasy@escriptirc.com>
+*               2011 Roberto Rodríguez Pino <rodpin@gmail.com>
+*
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public License
 * as published by the Free Software Foundation; either version 3
@@ -11,6 +12,10 @@
 * but WITHOUT ANY WARRANTY; without even the implied warranty of
 * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 * GNU General Public License for more details.
+* You should have received a copy of the GNU General Public License
+* along with this program; if not, write to the Free Software
+* Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+*
 */
 
 require_once('classes/recaptchalib.php');
@@ -20,6 +25,7 @@ class Pastebin
 {
 	var $conf=null;
 	var $db=null;
+	var $errors=null;
 	
 	// Constructor expects a configuration array which should contain the elements documented in config.php
 	function Pastebin(&$conf)
