@@ -367,3 +367,7 @@ div#syntax
 {
 	font-size:15px;
 }
+div#syntax div.text div
+{
+	font-family:NanumGothicCoding, "나눔고딕코딩";
+}
