@@ -2,7 +2,7 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
 <title><?php echo $page['title']?></title>
 <script type="text/javascript" src="<?php echo $CONF['url'] . 'templates/' . $CONF['template']?>/tab.js"></script>
 <link rel="shortcut icon" href="<?php echo $CONF['url'] . 'templates/' . $CONF['template']?>/images/favicon.ico" />
@@ -210,7 +210,7 @@ foreach ($CONF['geshiformats'] as $code=>$name)
 <div id="notes">To highlight particular lines, prefix each line with <?php echo $CONF['highlight_prefix'] ?></div>
 
 <!-- Code edit box -->
- <textarea id="code" class="codeedit" name="code2" cols="90" rows="20" onkeydown="return catchTab(this,event)"><?php echo htmlspecialchars($page['post']['editcode']) ?></textarea>
+ <textarea id="code" class="codeedit" name="code2" cols="90" rows="20" onkeydown="return catchTab(this,event)"><?php echo htmlentities($page['post']['editcode'], ENT_COMPAT, "UTF-8") ?></textarea>
 </div>
 
 <div id="pasteInfo">
