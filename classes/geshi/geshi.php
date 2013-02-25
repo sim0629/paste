@@ -377,7 +377,7 @@ class GeSHi
      * The size of tab stops
      * @var int
 	 */
-	var $tab_width = 8;
+	var $tab_width = 4;
         
     /**
      * Default target for keyword links
