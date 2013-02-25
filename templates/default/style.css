@@ -362,3 +362,8 @@ table.diff tr.hideold
 {
 	display:none;
 }
+
+div#syntax
+{
+	font-size:15px;
+}
