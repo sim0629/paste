@@ -71,6 +71,7 @@ class DB
     // Add paste and return ID.
     function addPost($poster,$format,$code,$parent_pid,$expiry_flag,$password)
     {
+        $code = iconv("UTF-8", "UTF-8//IGNORE", $code);
     	//figure out expiry time
     	switch ($expiry_flag)
     	{
