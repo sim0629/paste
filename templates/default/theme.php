@@ -29,7 +29,7 @@
 <?php  
 	foreach($page['recent'] as $idx=>$entry)
 	{
-		if ($entry['pid']==$pid)
+		if (isset($pid) && $entry['pid']==$pid)
 			$cls=" class=\"highlight\"";
 		else
 			$cls="";
@@ -109,8 +109,13 @@ function showMe()
 }
 
 // Check for a password.
+if (isset($_POST['thePassword']))
+{
 $postPass = $_POST['thePassword'];
+}
 
+if (isset($pid))
+{
 if ($pid >0)
 {
 	global $pid;
@@ -146,6 +151,7 @@ if ($pid >0)
    	showMe();
 	}
 	
+}
 }
 if (isset($_GET['archive']))
 {
