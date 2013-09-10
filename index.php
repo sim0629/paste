@@ -113,6 +113,9 @@ if (isset($_REQUEST["show"]))
 else
 {
 	$page['posttitle']='New posting';
+	$page['post']['pid']='';
+	$page['post']['editcode']='';
+	$page['post']['password']='';
 }
 
 if ($page['current_format']!='text')
