@@ -57,7 +57,7 @@ class Pastebin
 	// Private method for validating a user-submitted username
 	function _cleanUsername($name)
 	{
-		return trim(preg_replace('/[^A-Za-z0-9_ \-]/', '',$name));	
+		return trim(preg_replace('/[^A-Za-z0-9_ \-\.]/', '',$name));	
 	}
 	
 	// Private method for validating a user-submitted format code
@@ -137,7 +137,7 @@ class Pastebin
 		}
 		
 		if (strlen($post['code2'])) {
-			$poster=preg_replace('/[^A-Za-z0-9_ \-]/', '',$post['poster']);
+			$poster=preg_replace('/[^A-Za-z0-9_ \-\.]/', '',$post['poster']);
 			$poster=$post['poster'];
 			if (strlen($poster)==0)
 				$poster='Anonymous';
