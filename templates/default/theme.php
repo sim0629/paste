@@ -36,7 +36,11 @@
 			
 		echo "<li" . $cls . "><a href=\"{$entry['url']}\">";
 		echo $entry['poster'];
-		echo "</a><br/>{$entry['agefmt']}<br /><br /></li>\n";
+		echo "</a><br/>";
+		echo "<span title=\"{$entry['postdate']}\">";
+		echo $entry['agefmt'];
+		echo "</span>";
+		echo "<br /><br /></li>\n";
 	}
 ?>
 </ul>
